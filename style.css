@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ html{
 }
 body{
     font-size: 1.6rem;
-    font-family: "Montserrat";
+    font-family: 'Rajdhani', sans-serif;
     overflow: hidden;
 }
 a{
@@ -92,14 +94,16 @@ nav{
     height:100vh;
     background-image: url("./images/bg-pat.png");
     background-size: cover;
-    opacity: .4a;
+    opacity: .5;
     z-index: -1;
 }
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-top: 24rem;
+    margin-top: 25%;
+    margin-bottom: 50%;
+    
 }
 .content-details{
     max-width:80%;
@@ -221,7 +225,14 @@ nav{
         filter: hue-rotate(100deg);
     }
 }
-
+@keyframes background_Animation{
+    from{
+        .landing-page::before{}
+    }
+    to{
+        
+    }
+}
 /* Media Queries */
 @media screen and (max-width: 758px){
     .nav{
@@ -295,3 +306,75 @@ nav{
         bottom:  -10rem;
     }
 }
+
+
+
+
+
+/* About Page */
+.profile{
+    width:80%;
+    margin: 25% auto;
+    
+}
+.profile_pic{
+    width:10%;
+    /*background: #eee;*/
+    float: left;
+    display: inline-block;
+}
+.profile_pic img{
+    border-radius: 50%;
+}
+.profile_info{
+    color:#fff;
+    width:80%;
+    float:left;
+    /*background: #fff*/
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: solid 1px #fff;
+    font-size: 2.2rem;
+}
+.profile_info a{
+    color:#eee;
+    font-weight: 500;
+    border-bottom: solid 1px #fff;
+}
+.profile_info a:hover{
+    background: #fff;
+    color:blue;
+    padding: 1px 3px;
+    font-weight: 500;
+}
+.projects {
+    width: 100px;
+    height: 20px;
+    display: block;
+    margin:60% auto;
+    /*margin-top:100px;*/
+}
+.profile_info  input{
+        border: none;
+    border-radius: 5rem;
+    padding: .5rem 2rem;
+    outline: none; /*New --- Stroke*/
+        width: 20rem;
+    background-image: linear-gradient(to right, #FF83D5, #FFCCB0);
+    color: #fff;
+    cursor: pointer; /*New --- Hover mouse shape*/
+    float:none;
+    margin-left:5px;
+    
+}
+.profile_info input:hover{
+    background-image: linear-gradient(to left, #FF83D5, #FFCCB0);
+    font-weight: 700;
+}
+/* Links
+https://samdickie.medium.com/the-best-personal-websites-ive-seen-2019-ab6d5c64f3ea
+ */
+
+ 
+
+ 
