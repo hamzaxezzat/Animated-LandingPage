@@ -1,2 +1,2 @@
 # Animated-LandingPage
-A landing page with beautiful animations created using HTML,CSS, and Javascript.
+A landing page with beautiful animations based in pure CSS.
